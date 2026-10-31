@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="id"><head><meta charset="utf-8">
+<meta name="description" content="Belajar IT Infrastructure dengan santai: materi, poster visual, kuis, dan kalkulator subnet.">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Ruang Jaringan — belajar IT Infrastructure, santai aja</title>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 100 100%27%3E%3Ctext y=%27.9em%27 font-size=%2790%27%3E📦%3C/text%3E%3C/svg%3E">
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@500;700;800&family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/style.css"></head><body>
+<header><div class="wrap"><button class="logo" data-go="home">📦 <span>ruang<small>jaringan</small></span></button>
+<nav><button data-go="materi">Materi</button><button data-go="kuis">Kuis</button><button data-go="poster">Poster</button><button data-go="bengkel">Bengkel Subnet</button></nav><button class="btn alt" id="th" aria-label="Ganti tema">🌓</button></div></header>
+<main class="wrap">
+<section class="view" id="v-home">
+ <div class="hero"><div><h1>Jaringan itu <mark>nggak seserem</mark> kelihatannya.</h1>
+ <p>Dari paket data yang nyasar sampai cara bagi-bagi IP, kita bahas pelan-pelan, pakai bahasa manusia. Ada materi, kuis yang bikin penasaran, plus kalkulator subnet buat coba-coba sendiri.</p>
+ <div class="row"><button class="btn" data-go="materi">Yuk mulai belajar →</button><button class="btn alt" data-go="kuis">Langsung kuis 🎯</button></div></div>
+ <div class="stage"><div class="big">📦</div><span class="pk" style="top:14%;left:8%">192.168.1.1</span><span class="pk" style="top:62%;left:10%;animation-delay:-1s">TCP ✋🤝</span><span class="pk" style="top:20%;right:8%;animation-delay:-2s">DNS?</span><span class="pk" style="bottom:12%;right:12%;animation-delay:-3s">/24</span></div></div>
+ <div class="tips"><div class="card"><b>🧠 Paham dulu, hafal belakangan</b>Setiap bagian dibikin pendek. Baca, centang kalau sudah nyambung.</div><div class="card"><b>🎲 Kuis diacak</b>Urutan soal dan jawaban selalu beda, jadi nggak bisa asal ingat posisi.</div><div class="card"><b>🔧 Bisa dicoba langsung</b>Ketik IP dan prefix, hasilnya langsung keluar di Bengkel Subnet.</div></div>
+</section>
+<section class="view" id="v-materi"><h2 class="t">Mau mulai dari mana?</h2><p class="sub">Urutan di bawah paling enak buat pemula, tapi boleh loncat kok.</p><div class="grid" id="topics"></div></section>
+<section class="view" id="v-lesson"><div class="lesson" id="lesson"></div></section>
+<section class="view" id="v-kuis"><div id="qpick"><h2 class="t">Siap diuji? 😎</h2><p class="sub">Pilih topik, atau gas semua topik sekaligus. Salah itu wajar, pembahasannya langsung muncul.</p><div class="grid" id="qgrid"></div></div><div class="quiz" id="qstage" hidden></div></section>
+<section class="view" id="v-poster"><h2 class="t">Galeri Poster 🎨</h2><p class="sub">Ringkasan visual supaya konsep susah jadi gampang diingat. Ada yang bisa diklik!</p><div class="pgrid" id="pgrid"></div></section>
+<section class="view" id="v-bengkel"><h2 class="t">Bengkel Subnet 🔧</h2><p class="sub">Masukkan alamat IP dan prefix, lalu lihat network, broadcast, dan rentang host-nya. Cocok buat ngecek jawaban latihan.</p>
+ <div class="card calc"><div class="f"><div><label>Alamat IP</label><input id="ip" value="192.168.10.70" inputmode="decimal"></div><div><label>Prefix (0–32)</label><input id="px" value="27" inputmode="numeric"></div></div><div id="cres" class="res"></div></div></section>
+</main>
+<nav class="tabbar"><button data-go="home"><i>🏠</i>Beranda</button><button data-go="materi"><i>📚</i>Materi</button><button data-go="poster"><i>🎨</i>Poster</button><button data-go="kuis"><i>🎯</i>Kuis</button><button data-go="bengkel"><i>🔧</i>Subnet</button></nav>
+<footer><div class="wrap">Dibuat untuk belajar bareng 💛 · Materi disusun dari modul dan PPT IT Infrastructure · Isi kuis sebaiknya tetap dicek dengan dosen/modul resmi.</div></footer>
+<script src="assets/data.js"></script>
+<script src="assets/app.js"></script></body></html>
